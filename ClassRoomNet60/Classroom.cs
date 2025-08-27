@@ -18,5 +18,16 @@ namespace ClassRoomNet60
             SemesterStart = new DateTime();
         }
 
+        //public void SeasonSort()
+        //{
+        //    int spring = 
+
+        //    StudentList
+        //        .Where(s => s.BirthMonth == )
+        //        .OrderBy(s => s.Title)
+        //        .Select(s => new { m.Title, m.Year });
+
+        //}
+
     }
 }
