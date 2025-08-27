@@ -12,9 +12,11 @@ namespace ClassRoomNet60
         public List<Student> StudentList { get; set; }
         public DateTime SemesterStart { get; set; }
 
-        public Classroom()
+        public Classroom(string className, DateTime datetime)
         {
-
+            ClassName = className;
+            StudentList = new List<Student>();
+            SemesterStart = datetime;
         }
     }
 }
