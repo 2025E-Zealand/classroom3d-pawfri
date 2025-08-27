@@ -11,5 +11,12 @@ class1.StudentList.Add(new Student("Patrick", 12, 10));
 class1.StudentList.Add(new Student("Alberte", 10, 10));
 
 // Opgave 4
+Console.WriteLine($"Klassenavn: {class1.ClassName} har opstartsdato: {class1.SemesterStart}");
+
+foreach (Student student in class1.StudentList)
+{
+    Console.WriteLine($"Student navn: {student.Name}");
+}
+
 
 
