@@ -19,6 +19,7 @@ namespace ClassRoomNet60
             Birthday = birthday;
         }
 
+        //Opgave 5 - Metode til at returnere sæson
         public string Season()
         {
             if (BirthMonth == 12 || BirthMonth == 1 || BirthMonth == 2)
@@ -35,11 +36,11 @@ namespace ClassRoomNet60
             }
             else if (BirthMonth == 9 || BirthMonth == 10 || BirthMonth == 11)
             {
-                return "Autum";
+                return "Autumn";
             }
             else
             {
-                return "The month is an invalid";
+                return "ERROR: invalid month!";
             }
         }
     }

@@ -18,16 +18,20 @@ namespace ClassRoomNet60
             SemesterStart = new DateTime();
         }
 
-        //public void SeasonSort()
-        //{
-        //    int spring = 
+        //Opgave 6 - Metode til at sortere og gruppere baseret på sæson
+        public void SeasonSort()
+        {
+            var groups = StudentList
+                .Where(s => s.BirthMonth > 0)
+                .GroupBy(s => s.Season())
+                .OrderBy(g => g.Key);
 
-        //    StudentList
-        //        .Where(s => s.BirthMonth == )
-        //        .OrderBy(s => s.Title)
-        //        .Select(s => new { m.Title, m.Year });
+            foreach (var group in groups)
+            {
+                Console.WriteLine($"{group.Count()} birthdays in {group.Key}");
+            }
 
-        //}
+        }
 
     }
 }
